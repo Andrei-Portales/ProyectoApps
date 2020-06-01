@@ -26,4 +26,12 @@
     <string name="altura">Altura (En metros)</string>
     <string name="registrarme">Registrarme</string>
     <string name="ya_tienes_cuenta">¿Ya tienes una cuenta? Inicia sesion</string>
+    <string name="Inicio">Inicio</string>
+    <string name="RutinaDiaria">Rutina diaria</string>
+    <string name="PublicarRutina">Publicar rutina</string>
+    <string name="rutinas_comunidad">Rutinas de comunidad</string>
+    <string name="RutinasFavs">Rutinas favoritas</string>
+    <string name="Ajustes">Ajustes</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
 </resources>

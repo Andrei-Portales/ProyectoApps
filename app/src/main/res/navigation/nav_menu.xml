@@ -21,7 +21,7 @@
         android:label="fragment_publicar_rutina"
         tools:layout="@layout/fragment_publicar_rutina" />
     <fragment
-        android:id="@+id/rutinasComunidadFragment2"
+        android:id="@+id/rutinasComunidadFragment"
         android:name="com.portales.proyectoapps.Principal.RutinasComunidad.RutinasComunidadFragment"
         android:label="fragment_rutinas_comunidad"
         tools:layout="@layout/fragment_rutinas_comunidad" />
@@ -31,7 +31,7 @@
         android:label="fragment_rutinas_favoritas"
         tools:layout="@layout/fragment_rutinas_favoritas" />
     <fragment
-        android:id="@+id/ajustesFragment2"
+        android:id="@+id/ajustesFragment"
         android:name="com.portales.proyectoapps.Principal.Ajustes.AjustesFragment"
         android:label="fragment_ajustes"
         tools:layout="@layout/fragment_ajustes" />
