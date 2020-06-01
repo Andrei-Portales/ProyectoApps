@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.portales.proyectoapps.Principal.Inicio.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/rutinaDiariaFragment"
+        android:name="com.portales.proyectoapps.Principal.RutinaDiaria.RutinaDiariaFragment"
+        android:label="fragment_rutina_diaria"
+        tools:layout="@layout/fragment_rutina_diaria" />
+    <fragment
+        android:id="@+id/publicarRutinaFragment"
+        android:name="com.portales.proyectoapps.Principal.Publicar.PublicarRutinaFragment"
+        android:label="fragment_publicar_rutina"
+        tools:layout="@layout/fragment_publicar_rutina" />
+    <fragment
+        android:id="@+id/rutinasComunidadFragment2"
+        android:name="com.portales.proyectoapps.Principal.RutinasComunidad.RutinasComunidadFragment"
+        android:label="fragment_rutinas_comunidad"
+        tools:layout="@layout/fragment_rutinas_comunidad" />
+    <fragment
+        android:id="@+id/rutinasFavoritasFragment"
+        android:name="com.portales.proyectoapps.Principal.RutinasFavoritas.RutinasFavoritasFragment"
+        android:label="fragment_rutinas_favoritas"
+        tools:layout="@layout/fragment_rutinas_favoritas" />
+    <fragment
+        android:id="@+id/ajustesFragment2"
+        android:name="com.portales.proyectoapps.Principal.Ajustes.AjustesFragment"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+
+</navigation>
