@@ -32,18 +32,6 @@ class LoginFragment : Fragment() {
         listener = ActionListener()
         activity?.title = activity?.getString(R.string.iniciar_sesion)
         botones()
-/*
-        val LoginViewModel = ViewModelProviders.of(this)
-            .get(LoginFragmentViewModel::class.java)
-
-        DataBindingUtil.setContentView<FragmentLoginBinding>(activity as Activity,R.layout.fragment_login)
-            .apply {
-                this.lifecycleOwner = (this@LoginFragment)
-                this.loginViewModel = LoginViewModel
-            }
-
-*/
-
         return vista
     }
 
