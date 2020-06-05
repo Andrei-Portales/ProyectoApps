@@ -9,54 +9,58 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import com.portales.proyectoapps.R
-import kotlinx.android.synthetic.main.fragment_register.view.*
+import com.portales.proyectoapps.databinding.FragmentRegisterBinding
 import java.util.*
 
 
 class RegisterFragment : Fragment(), DatePickerDialog.OnDateSetListener {
 
-    private lateinit var vista:View
+
     private lateinit var listener: View.OnClickListener
     private val dateListener :  DatePickerDialog.OnDateSetListener = this
+    private lateinit var binding :FragmentRegisterBinding
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        vista = inflater.inflate(R.layout.fragment_register, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_register, container, false)
+
+        //vista = inflater.inflate(R.layout.fragment_register, container, false)
         activity?.title = activity?.getString(R.string.registrarse)
         listener = ActionListener()
-        botones()
+        //botones()
 
-        return vista
+        return binding.root
     }
 
 
 
     private fun botones(){
-        vista.txtFechaLayout.setOnClickListener(listener)
-        vista.txtYaCuenta.setOnClickListener(listener)
-        vista.btnRegistrarse.setOnClickListener(listener)
+        binding.txtFechaLayout.setOnClickListener(listener)
+        binding.txtYaCuenta.setOnClickListener(listener)
+        binding.btnRegistrarse.setOnClickListener(listener)
     }
 
 
     inner class ActionListener() : View.OnClickListener {
         override fun onClick(v: View?) {
             when(v){
-                vista.txtFechaLayout -> {
+                binding.txtFechaLayout -> {
                     DatePickerDialog(context as Context, dateListener,
                         Calendar.getInstance().get(Calendar.YEAR),
                         Calendar.getInstance().get(Calendar.MONTH),
                         Calendar.getInstance().get(Calendar.DAY_OF_MONTH)).show()
                 }
-                vista.txtYaCuenta -> {
-                    Navigation.findNavController(vista).navigate(R.id.action_registerFragment_to_loginFragment)
+                binding.txtYaCuenta -> {
+                    Navigation.findNavController(binding.root).navigate(R.id.action_registerFragment_to_loginFragment)
                 }
-                vista.btnRegistrarse -> {
-                    Navigation.findNavController(vista).navigate(R.id.action_registerFragment_to_loginFragment)
+                binding.btnRegistrarse -> {
+                    Navigation.findNavController(binding.root).navigate(R.id.action_registerFragment_to_loginFragment)
                 }
             }
         }
@@ -65,8 +69,10 @@ class RegisterFragment : Fragment(), DatePickerDialog.OnDateSetListener {
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
-        vista.txtFechaNacimiento.setText("${dayOfMonth}/${month}/${year}")
+        binding.txtFechaNacimiento.setText("${dayOfMonth}/${month}/${year}")
     }
+
+
 
 
 }
