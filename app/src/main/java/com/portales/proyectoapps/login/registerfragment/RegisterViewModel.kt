@@ -5,6 +5,10 @@ import androidx.lifecycle.ViewModel
 
 class RegisterViewModel : ViewModel() {
 
-    val RegisterModel = MutableLiveData<RegisterModel>()
+    val RegisterUseCase = RegisterUseCase()
+
+    fun register(model: RegisterModel){
+        RegisterUseCase.register(model)
+    }
 
 }

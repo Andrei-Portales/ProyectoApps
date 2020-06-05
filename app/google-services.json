@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:427277177371:android:7daaf3341f28c4726b9ebe",
+        "mobilesdk_app_id": "1:427277177371:android:3066e6ed7c34c51e6b9ebe",
         "android_client_info": {
           "package_name": "com.portales.proyectoapps"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "427277177371-0n7l3cvrmo28qu0a2lmq7tai75ckn3d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.portales.proyectoapps",
+            "certificate_hash": "73d7b56fdd9c01fc197d2bf7c735792e6c45e479"
+          }
+        },
         {
           "client_id": "427277177371-pb3r6t5bg6uic6hs745aurv4tdlhdq96.apps.googleusercontent.com",
           "client_type": 3
