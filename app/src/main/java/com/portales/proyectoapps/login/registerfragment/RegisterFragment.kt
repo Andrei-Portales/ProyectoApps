@@ -33,6 +33,7 @@ class RegisterFragment : Fragment(), DatePickerDialog.OnDateSetListener {
         //vista = inflater.inflate(R.layout.fragment_register, container, false)
         activity?.title = activity?.getString(R.string.registrarse)
         listener = ActionListener()
+
         botones()
 
         return binding.root
