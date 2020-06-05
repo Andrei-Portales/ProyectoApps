@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.portales.proyectoapps.Login.LoginActivity
-import com.portales.proyectoapps.Principal.MainActivity
+import com.portales.proyectoapps.login.LoginActivity
 import com.portales.proyectoapps.R
 
 class SplashActivity : AppCompatActivity() {

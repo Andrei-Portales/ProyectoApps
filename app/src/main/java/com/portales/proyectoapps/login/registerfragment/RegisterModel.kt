@@ -1,6 +1,4 @@
-package com.portales.proyectoapps.Login.Fragments.RegisterFragment
-
-import java.util.*
+package com.portales.proyectoapps.login.registerfragment
 
 data class RegisterModel(var name: String? = "", var email: String? = "",
                          var password : String? = "", var cpassword:String? = "",

@@ -1,4 +1,4 @@
-package com.portales.proyectoapps.Login.Fragments.RegisterFragment
+package com.portales.proyectoapps.login.registerfragment
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package com.portales.proyectoapps.Login
+package com.portales.proyectoapps.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

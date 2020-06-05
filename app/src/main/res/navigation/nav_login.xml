@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.portales.proyectoapps.Login.Fragments.LoginFragment.LoginFragment"
+        android:name="com.portales.proyectoapps.login.loginfragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.portales.proyectoapps.Login.Fragments.RegisterFragment.RegisterFragment"
+        android:name="com.portales.proyectoapps.login.registerfragment.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action

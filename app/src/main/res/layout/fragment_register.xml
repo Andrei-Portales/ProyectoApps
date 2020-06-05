@@ -7,13 +7,13 @@
     <data>
         <variable
             name="RegisterModel"
-            type="com.portales.proyectoapps.Login.Fragments.RegisterFragment.RegisterModel" />
+            type="com.portales.proyectoapps.login.registerfragment.RegisterModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Login.Fragments.RegisterFragment.RegisterFragment">
+        tools:context=".login.registerfragment.RegisterFragment">
 
         <ScrollView
             android:layout_width="0dp"

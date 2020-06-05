@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        tools:context=".Login.Fragments.LoginFragment.LoginFragment">
+        tools:context=".login.loginfragment.LoginFragment">
 
         <Button
             android:id="@+id/btnIniciarSesion"
