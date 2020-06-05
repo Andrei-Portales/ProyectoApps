@@ -23,7 +23,7 @@ class RegisterRepository {
         user.put("birth", model.birth)
         user.put("weight", model.weight)
         user.put("height", model.height)
-
+        Log.d("DBCONECTION", db.toString())
         db.collection("users").document(model.email.toString()).set(user).addOnCompleteListener {
             Log.d("FIREBASEEXITO", it.result.toString())
         }.addOnFailureListener {
